@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Linki - Przyciski na środku ekranu</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Pełna wysokość ekranu */
+            margin: 0;
+            background-color: #f8f9fa; /* Lekkie tło dla lepszego efektu */
+            flex-direction: column; /* Ustawienie linków w kolumnie */
+        }
+
+        .animated-link {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin: 10px 0; /* Dodana przestrzeń między przyciskami */
+            text-align: center;
+            border: 2px solid transparent; /* Domyślna ramka */
+        }
+
+        .animated-link:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px); /* Lekkie uniesienie przycisku */
+            border-color: #004080; /* Zmiana koloru ramki */
+        }
+
+        .animated-link:active {
+            transform: translateY(0); /* Efekt kliknięcia */
+        }
+    </style>
+</head>
+<body>
+    <a href="ball.html" class="animated-link">Piłka</a>
+    <br>
+    <a href="sound-cut.html" class="animated-link">Wycinanie dźwięków</a>
+    <br>
+    <a href="video-cut.html" class="animated-link">Video autocut</a>
+    <br>
+    <a href="video-silence.html" class="animated-link">Video mute</a>
+    
+</body>
+</html>
